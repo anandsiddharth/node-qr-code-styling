@@ -102,11 +102,11 @@ export default class QRCodeStyling {
 
     if (this._options.type === drawTypes.canvas) {
       if (this._canvas) {
-        container.appendChild(this._canvas.getCanvas());
+        // container.appendChild(this._canvas.getCanvas());
       }
     } else {
       if (this._svg) {
-        container.appendChild(this._svg.getElement());
+        // container.appendChild(this._svg.getElement());
       }
     }
 
@@ -123,9 +123,7 @@ export default class QRCodeStyling {
 
       return new Blob(['<?xml version="1.0" standalone="no"?>\r\n' + source], { type: "image/svg+xml" });
     } else {
-      return new Promise((resolve) =>
-        ((element as unknown) as QRCanvas).getCanvas().toBlob(resolve, `image/${extension}`, 1)
-      );
+      return new Promise((resolve) => ((element as unknown) as QRCanvas).getCanvas().toDataURL());
     }
   }
 
@@ -159,7 +157,7 @@ export default class QRCodeStyling {
       const url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
       downloadURI(url, `${name}.svg`);
     } else {
-      const url = ((element as unknown) as QRCanvas).getCanvas().toDataURL(`image/${extension}`);
+      const url = ((element as unknown) as QRCanvas).getCanvas().toDataURL();
       downloadURI(url, `${name}.${extension}`);
     }
   }

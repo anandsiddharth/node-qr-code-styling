@@ -1,5 +1,5 @@
 {
-  "name": "qr-code-styling",
+  "name": "node-qr-code-styling",
   "version": "1.5.0",
   "description": "Add a style and an image to your QR code",
   "main": "lib/qr-code-styling.js",
@@ -8,12 +8,14 @@
     "lib"
   ],
   "dependencies": {
+    "jsdom": "^17.0.0",
     "qrcode-generator": "^1.4.3"
   },
   "devDependencies": {
+    "@types/jsdom": "^16.2.13",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
-    "canvas": "^2.6.1",
+    "canvas": "^2.8.0",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
