@@ -90,9 +90,9 @@ export default class QRDot {
         this._element.setAttribute(
           "d",
           `M ${x} ${y}` + //go to top left position
-          `v ${size}` + //draw line to left bottom corner
-          `h ${size / 2}` + //draw line to left bottom corner + half of size right
-          `a ${size / 2} ${size / 2}, 0, 0, 0, 0 ${-size}` // draw rounded corner
+            `v ${size}` + //draw line to left bottom corner
+            `h ${size / 2}` + //draw line to left bottom corner + half of size right
+            `a ${size / 2} ${size / 2}, 0, 0, 0, 0 ${-size}` // draw rounded corner
         );
       }
     });
@@ -109,10 +109,10 @@ export default class QRDot {
         this._element.setAttribute(
           "d",
           `M ${x} ${y}` + //go to top left position
-          `v ${size}` + //draw line to left bottom corner
-          `h ${size}` + //draw line to right bottom corner
-          `v ${-size / 2}` + //draw line to right bottom corner + half of size top
-          `a ${size / 2} ${size / 2}, 0, 0, 0, ${-size / 2} ${-size / 2}` // draw rounded corner
+            `v ${size}` + //draw line to left bottom corner
+            `h ${size}` + //draw line to right bottom corner
+            `v ${-size / 2}` + //draw line to right bottom corner + half of size top
+            `a ${size / 2} ${size / 2}, 0, 0, 0, ${-size / 2} ${-size / 2}` // draw rounded corner
         );
       }
     });
@@ -129,9 +129,9 @@ export default class QRDot {
         this._element.setAttribute(
           "d",
           `M ${x} ${y}` + //go to top left position
-          `v ${size}` + //draw line to left bottom corner
-          `h ${size}` + //draw line to right bottom corner
-          `a ${size} ${size}, 0, 0, 0, ${-size} ${-size}` // draw rounded top right corner
+            `v ${size}` + //draw line to left bottom corner
+            `h ${size}` + //draw line to right bottom corner
+            `a ${size} ${size}, 0, 0, 0, ${-size} ${-size}` // draw rounded top right corner
         );
       }
     });
@@ -148,11 +148,11 @@ export default class QRDot {
         this._element.setAttribute(
           "d",
           `M ${x} ${y}` + //go to left top position
-          `v ${size / 2}` + //draw line to left top corner + half of size bottom
-          `a ${size / 2} ${size / 2}, 0, 0, 0, ${size / 2} ${size / 2}` + // draw rounded left bottom corner
-          `h ${size / 2}` + //draw line to right bottom corner
-          `v ${-size / 2}` + //draw line to right bottom corner + half of size top
-          `a ${size / 2} ${size / 2}, 0, 0, 0, ${-size / 2} ${-size / 2}` // draw rounded right top corner
+            `v ${size / 2}` + //draw line to left top corner + half of size bottom
+            `a ${size / 2} ${size / 2}, 0, 0, 0, ${size / 2} ${size / 2}` + // draw rounded left bottom corner
+            `h ${size / 2}` + //draw line to right bottom corner
+            `v ${-size / 2}` + //draw line to right bottom corner + half of size top
+            `a ${size / 2} ${size / 2}, 0, 0, 0, ${-size / 2} ${-size / 2}` // draw rounded right top corner
         );
       }
     });

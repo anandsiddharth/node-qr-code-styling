@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kozakdenys/qr-code-styling.git"
+    "url": "git+https://github.com/anandsiddharth/node-qr-code-styling.git"
   },
   "keywords": [
     "qr",
@@ -60,10 +60,10 @@
     "logo",
     "design"
   ],
-  "author": "Denys Kozak <kozak.denys.dev@gmail.com>",
+  "author": "Anand Siddharth <anandsiddharth21@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kozakdenys/qr-code-styling/issues"
+    "url": "https://github.com/anandsiddharth/node-qr-code-styling/issues"
   },
   "homepage": "https://qr-code-styling.com"
 }
